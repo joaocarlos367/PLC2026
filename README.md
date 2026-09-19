@@ -5,7 +5,7 @@
 - **Nome:** João Carlos Simões Silva
 - **ID:** A110901
 
-![Foto do Autor](foto.png)
+![Foto do Autor](foto.jpeg)
 
 ## Resumo
 
