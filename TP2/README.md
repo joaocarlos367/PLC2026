@@ -1,7 +1,7 @@
 ## Problema:
 Criar em Python um pequeno conversor de MarkDown para HTML para os elementos descritos na "Basic Syntax" da Cheat Sheet:
 
-###1. Titulos
+### 1. Titulos
    O primeiro desafio imposto foi o de converter linhas iniciadas por #; seguindo o exemplo:
     In: `# Exemplo`
 
