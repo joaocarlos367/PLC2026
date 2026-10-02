@@ -1,5 +1,5 @@
 # Problema:
-## Criar em Python um pequeno conversor de MarkDown para HTML para os elementos descritos na "Basic Syntax" da Cheat Sheet:
+# Criar em Python um pequeno conversor de MarkDown para HTML para os elementos descritos na "Basic Syntax" da Cheat Sheet:
 
 ## Cabeçalhos: linhas iniciadas por "# texto", ou "## texto" ou "### texto"
 1. O primeiro desafio imposto foi o de converter linhas iniciadas por #; seguindo o exemplo:
