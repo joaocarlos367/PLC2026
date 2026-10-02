@@ -8,7 +8,7 @@ Criar em Python um pequeno conversor de MarkDown para HTML para os elementos des
 
     A parte do meu código que resolve este problema é:
     ```python
-    regex1 = r"^(#{1,3})\s+(.*)$"
+    regex1 = r"^(#{1,3})\s+(.+)$"
     match1 = re.match(regex1, linha)
     
     if match1:
@@ -18,9 +18,9 @@ Criar em Python um pequeno conversor de MarkDown para HTML para os elementos des
     ```
 ### Explicação
 A expressão regular ^(#{1,3})\s+(.+)$ é composta por:
-- ^ e $, que ancoram o padrão ao início e ao fim da linha;
-- (#{1,3}), um grupo de captura que apanha entre 1 e 3 cardinais, correspondendo aos níveis h1 a h3;
-- \s+, que exige pelo menos um espaço em branco a separar os cardinais do texto;
-- (.+), um segundo grupo de captura com o texto do título (pelo menos um carácter).
+- ^ assegura que o padrão que queremos está no inicio;
+- O (#{1,3}) é um grupo de captura que apanha entre 1 e 3 cardinais;
+- \s+, faz com que haja pelo menos um espaço a separar os cardinais do texto;
+- (.+) é outro grupo de captura que é onde vai estar o texto.
 
 A função re.match verifica se a linha respeita este padrão, se sim, groups() devolve os dois grupos, que são guardados em cardinais e texto. O nível do título obtém-se com len(cardinais), e a função devolve o texto envolvido na etiqueta <h{nivel}>.
