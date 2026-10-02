@@ -7,15 +7,15 @@ Criar em Python um pequeno conversor de MarkDown para HTML para os elementos des
     Out: `<h1>Exemplo</h1>`
 
     A parte do meu código que resolve este problema é:
-      "
-      regex1 = r"^(#{1,3})\s+(.*)$"
-      match1 = re.match(regex1, linha)
-       
-      if match1:
-         cardinais, texto = match1.groups()
-         nivel = len(cardinais)
-         return f"<h{nivel}>{texto}</h{nivel}>"
-      "
+    ```python
+    regex1 = r"^(#{1,3})\s+(.*)$"
+    match1 = re.match(regex1, linha)
+    
+    if match1:
+        cardinais, texto = match1.groups()
+        nivel = len(cardinais)
+        return f"<h{nivel}>{texto}</h{nivel}>"
+    ```
 ### Explicação
 A expressão regular ^(#{1,3})\s+(.+)$ é composta por:
 - ^ e $, que ancoram o padrão ao início e ao fim da linha;
